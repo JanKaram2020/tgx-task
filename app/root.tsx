@@ -6,9 +6,12 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+import { ApolloProvider } from "@apollo/client/react";
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import { client } from "~/lib/apollo-client";
+import React from "react";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -33,7 +36,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
+        <ApolloProvider client={client}>{children}</ApolloProvider>
         <ScrollRestoration />
         <Scripts />
       </body>
