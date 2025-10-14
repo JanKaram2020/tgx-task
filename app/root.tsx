@@ -6,11 +6,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-import { ApolloProvider } from "@apollo/client/react";
-
 import type { Route } from "./+types/root";
 import "./app.css";
-import { client } from "~/lib/apollo-client";
 import React from "react";
 
 export const links: Route.LinksFunction = () => [
@@ -36,7 +33,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <ApolloProvider client={client}>{children}</ApolloProvider>
+        {children}
         <ScrollRestoration />
         <Scripts />
       </body>
