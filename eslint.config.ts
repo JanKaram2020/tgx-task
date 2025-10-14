@@ -6,9 +6,11 @@ import json from "@eslint/json";
 import css from "@eslint/css";
 import prettier from "eslint-plugin-prettier";
 import prettierConfig from "eslint-config-prettier";
+import pluginQuery from "@tanstack/eslint-plugin-query";
 import { defineConfig } from "eslint/config";
 
 export default defineConfig([
+  pluginQuery.configs["flat/recommended"],
   tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   {
