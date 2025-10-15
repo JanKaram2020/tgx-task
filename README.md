@@ -78,9 +78,9 @@ tgx-task/
 │   ├── routes/
 │   │   ├── character.tsx
 │   │   ├── index.tsx
-│   │   ├── app.css
-│   │   ├── root.tsx
-│   │   └── routes.ts
+│   ├── app.css
+│   ├── root.tsx
+│   └── routes.ts
 ├── public/
 ├── tests/
 ├── .dockerignore
@@ -97,7 +97,7 @@ tgx-task/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/tgx-task.git
+git clone https://github.com/jankaram2020/tgx-task.git
 cd tgx-task
 
 # Install dependencies
