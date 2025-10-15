@@ -115,7 +115,7 @@ yarn dev
 ```
 
 Then open:  
- `http://localhost:5173` (default Vite port)
+ [`http://localhost:5174`](http://localhost:5174) (default Vite port)
 
 ---
 
