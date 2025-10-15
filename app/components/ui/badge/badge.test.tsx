@@ -45,7 +45,7 @@ describe("Badge Component", () => {
   it("renders as a child element when asChild is true", () => {
     const { container } = render(
       <Badge asChild>
-        <a href="/">Link Badge</a>
+        <a href="/public">Link Badge</a>
       </Badge>,
     );
     const anchor = container.querySelector("a")!;

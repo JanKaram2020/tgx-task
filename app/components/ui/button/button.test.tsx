@@ -66,7 +66,7 @@ describe("Button Component", () => {
   it("renders as a child element when asChild is true", () => {
     const { container } = render(
       <Button asChild>
-        <a href="/">{LABEL}</a>
+        <a href="/public">{LABEL}</a>
       </Button>,
     );
     const anchor = container.querySelector("a")!;
