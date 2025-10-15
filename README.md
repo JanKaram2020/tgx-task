@@ -77,7 +77,7 @@ tgx-task/
 │   │   └── utils.ts
 │   ├── routes/
 │   │   ├── character.tsx
-│   │   ├── index.tsx
+│   │   └── index.tsx
 │   ├── app.css
 │   ├── root.tsx
 │   └── routes.ts
